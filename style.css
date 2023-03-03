@@ -854,6 +854,64 @@ footer .logo img {
 }
 
 @media only screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin-top: 12rem;
+  }
+
+  .navbar {
+    background: #131921;
+    height: 80px;
+    width: 100%;
+  }
+
+  .logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .navbar .logo img {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-links {
+    width: 100%;
+    background: #232f3e;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+
+  .navbar-links ul li a {
+    line-height: 30px;
+    color: #f1f1f1;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .text-over-img h1,
+  .text-over-img h3 {
+    font-size: 1.6rem;
+  }
+
+  .section-text p,
+  .section-text a {
+    font-size: 1.1rem;
+  }
+
   .small-img-grid .small-img {
     width: 280px;
     height: 350px;
@@ -865,8 +923,10 @@ footer .logo img {
   .category-container {
     width: 100%;
     margin: 1rem 0px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 1.5rem;
     /* padding: 0px .2rem; */
     /* background-color: #131921; */
   }
@@ -884,11 +944,11 @@ footer .logo img {
   }
 
   .category-wrapper-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5rem 0.2rem;
+    padding: 0.9rem 0.5rem;
   }
 
   .mobile-cat-title {
@@ -899,7 +959,7 @@ footer .logo img {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1px;
+    gap: 1rem;
     text-align: center;
     padding: 0.1rem 0.1rem;
   }
@@ -911,7 +971,7 @@ footer .logo img {
     /* border: 1px solid green;  hide this */
     width: 120px;
     height: 120px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 10px;
@@ -922,7 +982,7 @@ footer .logo img {
 
   .desc-grid {
     float: left;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     overflow: hidden;
     padding-left: 0px;
@@ -933,13 +993,20 @@ footer .logo img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.8rem 0.5rem;
   }
 
   .category-wrapper-footer a {
     color: #6887ad;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .back-to-top {
+    height: 50px;
+  }
+  .back-to-top a {
+    font-size: 1rem;
   }
 }
